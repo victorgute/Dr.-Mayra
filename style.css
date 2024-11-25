@@ -1,0 +1,601 @@
+/* Reset e estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Barra superior para ícones */
+.top-bar {
+    background-color: #002d5e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    font-size: 2rem;
+}
+
+.icons i {
+    color: #e0e7ef;
+    transition: transform 0.3s;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    color:#4a8ed6 ;
+    transition: 0.3s;
+}
+
+/* Seção principal do header */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    background-color: #e0e7ef;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    width: 70%; /* Lado esquerdo ocupa 70% */
+    padding-right: 20px;
+    color: #002d5e;
+}
+
+.header-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #002d5e;
+}
+
+.header-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.header-image {
+    width: 30%; /* Lado direito ocupa 30% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image img {
+    width: 100%; /* Imagem ocupa 100% da largura do contêiner */
+    max-width: 350px; /* Largura máxima fixa */
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 300px; /* Define um tamanho fixo para o logo */
+    margin-bottom: 1rem;
+    margin-left: 20rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #002d5e;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
+/* Seção de Serviços */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #002d5e;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.card i{
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+    color: #002d5e;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #0056b3;
+}
+
+.card h3 .icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #0056b3;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Seção "Quem é a Dra. Mayara?" */
+.about {
+    padding: 60px 20px;
+    background-color: #e0e7ef;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #002d5e 5px solid;
+}
+
+.about-text {
+    max-width: 600px;
+    color: #002d5e;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos da seção Diferenciais */
+.differentials-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.differentials-section h2 {
+    color: #002d5e; /* Azul escuro */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Container dos cards */
+.differentials-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos dos cards diferenciados */
+.differential-card {
+    background-color: #fff;
+    border: 2px solid #c0d3eb; /* Borda sutil */
+    border-radius: 15px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.differential-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Contêiner de ícones grandes */
+.icon-container {
+    background-color: #d3e2f1;
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.icon-container i {
+    font-size: 2.5rem;
+    color: #0056b3; /* Azul médio */
+}
+
+.differential-card h3 {
+    color: #002d5e;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.differential-card p {
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Botão de chamada para ação */
+.cta-button-container {
+    margin-top: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #002d5e;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Seção Direitos Básicos dos Autistas */
+.autism-rights-section {
+    background-color: #e0e7ef; /* Azul claro */
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #002d5e;
+}
+
+.autism-rights-section h2 {
+    font-size: 2.5rem;
+    color: #002d5e;
+    margin-bottom: 1.5rem;
+}
+
+.autism-rights-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #4a4a4a;
+}
+
+/* Container dos cartões de direitos */
+.rights-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos dos cartões de direitos */
+.right-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #f1f6fc; /* Azul mais claro para alternar */  
+    border: #002d5e 3px solid;
+}
+
+
+.right-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícones maiores para os direitos */
+.card-icon {
+    font-size: 2rem;
+    color: #0056b3; /* Azul médio */
+    margin-bottom: 1rem;
+}
+
+/* Título e descrição dentro dos cartões */
+.right-card h3 {
+    font-size: 1.6rem;
+    color: #002d5e;
+    margin-bottom: 0.5rem;
+}
+
+.right-card p {
+    color: #4a4a4a;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #002d5e; /* Azul escuro */
+    color: #e0e7ef; /* Azul claro */
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+.footer-links {
+    font-size: 1rem;
+}
+
+.footer-links a {
+    color: #a8c2e3; /* Azul claro */
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1300px){
+    .header-content{
+        padding-bottom: 3rem;
+        padding: 0rem 1rem;
+    }
+
+    .header-text{
+        width: 50%;
+    }
+
+    .header-text h2{
+        font-size:1.2rem;
+    }
+
+    .header-text p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .header-image{
+        width: 50%;
+    }
+
+    .logo{
+        margin: 0px;
+    }
+    .header-text a{
+        margin: 0px;
+    }
+
+}
+
+/* Responsividade para o Header */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        text-align: left;
+    }
+
+    .header-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-left: 5rem;
+    }
+
+    .header-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 1.1rem;
+    }
+
+
+/* Responsividade para Serviços */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade para Quem é a Dra. Mayara? */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 90%;
+    }
+    .about-text p{
+        text-align: left;
+    }
+}
+
+/* Seção Direitos Básicos dos Autistas */
+.autism-rights-section {
+    background-color: #e0e7ef;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #002d5e;
+}
+
+.autism-rights-section h2 {
+    font-size: 2.5rem;
+    color: #002d5e;
+    margin-bottom: 1.5rem;
+}
+
+.autism-rights-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #4a4a4a;
+    text-align: left;
+}
+
+/* Container dos cartões de direitos */
+.rights-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.right-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #f1f6fc;
+    border: #002d5e 3px solid;
+}
+
+.right-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .rights-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+/* Responsividade para Footer */
+.footer {
+    background-color: #002d5e;
+    color: #e0e7ef;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: #a8c2e3;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+}
+}
