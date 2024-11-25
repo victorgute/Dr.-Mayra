@@ -22,17 +22,34 @@ body {
     display: flex;
     gap: 25px;
     font-size: 2rem;
+    
 }
+
 
 .icons i {
     color: #e0e7ef;
     transition: transform 0.3s;
+    margin-right: 1rem;
 }
 
 .icons i:hover {
     transform: scale(1.2);
     color:#4a8ed6 ;
     transition: 0.3s;
+}
+
+.icons p{
+    color:#e0e7ef;
+}
+
+.icons a :hover{
+    color:#4a8ed6 ;
+    transition: 0.3s;
+}
+
+.icons a{
+    display: flex;
+    text-decoration: none;
 }
 
 /* Seção principal do header */
@@ -321,7 +338,14 @@ body {
     line-height: 1.6;
     margin-bottom: 2.5rem;
     color: #4a4a4a;
+    text-align: left;
 }
+
+.subtitulo p{
+    margin: 2rem 16rem;
+}
+
+
 
 /* Container dos cartões de direitos */
 .rights-cards {
