@@ -281,7 +281,7 @@ body {
 }
 
 .icon-container i {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #0056b3; /* Azul médio */
 }
 
@@ -521,7 +521,11 @@ body {
     }
 
     .icons p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+
+    .icons i{
+        font-size: 1.5rem; ;
     }
 }
 
