@@ -563,6 +563,11 @@ body {
     text-align: left;
 }
 
+
+.subtitulo p{
+    margin: 1rem 0rem;
+}
+
 /* Container dos cartões de direitos */
 .rights-cards {
     display: grid;
